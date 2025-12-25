@@ -125,11 +125,11 @@ npm install
 
 #### Configure API URL (Optional)
 
-The frontend is configured to connect to `http://localhost:1337` by default.
+The frontend is configured to connect to the backend at `http://localhost:1337/api/v1` by default.
 
-If your backend runs on a different URL, update:
-- `frontend/src/context/AuthContext.jsx` (line 6)
-- `frontend/src/utils/api.js` (line 3)
+If your backend runs on a different URL, update the `API_URL` constant in:
+- `frontend/src/context/AuthContext.jsx` (search for "API_URL")
+- `frontend/src/utils/api.js` (search for "API_URL")
 
 #### Start the Frontend
 

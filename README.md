@@ -115,9 +115,9 @@ EchoBolt is a full-stack music streaming web application that allows users to re
 
 2. **Configure API URL (optional):**
    The frontend is configured to connect to the backend at `http://localhost:1337/api/v1` by default.
-   If your backend runs on a different URL, update it in:
-   - `frontend/src/context/AuthContext.jsx`
-   - `frontend/src/utils/api.js`
+   If your backend runs on a different URL, update the `API_URL` constant in:
+   - `frontend/src/context/AuthContext.jsx` (search for "API_URL")
+   - `frontend/src/utils/api.js` (search for "API_URL")
 
 3. **Start the frontend dev server:**
    ```bash
@@ -215,8 +215,8 @@ PORT=1337
 
 ### Frontend
 The frontend uses hardcoded API URLs. If you need to change the backend URL:
-- Edit `frontend/src/context/AuthContext.jsx` (line 6)
-- Edit `frontend/src/utils/api.js` (line 3)
+- Edit the `API_URL` constant in `frontend/src/context/AuthContext.jsx`
+- Edit the `API_URL` constant in `frontend/src/utils/api.js`
 
 ---
 
